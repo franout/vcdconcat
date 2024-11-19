@@ -89,7 +89,7 @@ if __name__=="__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--input-files", type=str, nargs="+", 
                         help="input vcd/evcd file to merge")
-    parser.add_argument("--iterations", type=int,
+    parser.add_argument("--iterations", type=int, default=0,
                         help="number of iterations of single input file to dump")
     parser.add_argument("--output-file", type=str,
                         help="output vcd file")
