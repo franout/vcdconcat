@@ -82,6 +82,8 @@ def vcdconcat(input_file_list,output_file):
                             line="#"+str(new_time)+"\n"
                         vcdOutput.write(line)
                     line=fin.readline()
+            ## update endtime with last new_time
+            end_time = new_time
         print("Final End time : " +str(new_time))
 
 
